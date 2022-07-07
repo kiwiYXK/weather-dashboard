@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Weather DashBoard</title>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+    <link href="./assets/css/style.css" rel="stylesheet">
+  
+</head>
+<body>
+    <h1 class="title">weather DashBoard</h1>
+    <div class="sidebar">
+        <h3 class="fw-bold">Search for a City:</h2>
+        <input class="form-control" type="text" name="city" placeholder="San Diego" />
+        <input class="btn blue-button" type="button" value="Search"/>
+        <hr class="line">
+        <input class="btn city-btn grey-button" type="button" value="Austin"/>
+        <input class="btn city-btn grey-button" type="button" value="Chicago"/>
+        <input class="btn city-btn grey-button" type="button" value="New York"/>
+        <input class="btn city-btn grey-button" type="button" value="Orlando"/>
+        <input class="btn city-btn grey-button" type="button" value="San Francisco"/>
+        <input class="btn city-btn grey-button" type="button" value="Seattle"/>
+        <input class="btn city-btn grey-button" type="button" value="Denver"/>
+        <input class="btn city-btn grey-button" type="button" value="Atlanta"/>
+    </div>
+
+    <div class="content">
+        <div class="current-info">
+            <h2 class="fw-bold"> 
+                <span id="current-title">-</span>
+                <img id="current-icon" class="weather-icon-1" 
+                    src="http://openweathermap.org/img/wn/01d@2x.png" alt="">
+            </h2>
+            <p>Temp: <span id="current-temp">-</span>°F</p>
+            <p>Wind: <span id="current-wind">-</span> MPH</p>
+            <p>Humidity: <span id="current-humidity">-</span> %</p>
+            <p>UV index: <span id="current-uvi" class="risk-low">-</span></p>
+        </div>
+        <div class="forecast">
+            <h2 class="fw-bold">5-Day Forecast</h2>
+            <div class="card-list" id="card-list">
+                <div class="card forecast-card">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">3/31/2021</h5>
+                        <img class="weather-icon-2" src="http://openweathermap.org/img/wn/02d@2x.png" alt="">
+                        <div class="card-text">
+                            <p>Temp: </p>
+                            <p>Wind: </p>
+                            <p>Humidity: </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/example.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
